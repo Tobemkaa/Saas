@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import PageVisit
 
 def home(request):
-    page_title = "Brand"
+    page_title = "Inventory"
     PageVisit.objects.create(path = request.path)
     queryset = PageVisit.objects.all()
     
